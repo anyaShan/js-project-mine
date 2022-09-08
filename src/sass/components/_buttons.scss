@@ -1,3 +1,17 @@
+.button-wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 767.98px) {
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+
+}
+
 .button-primary-accent {
     @extend %button;
     @include btn-color($button-color-accent, $text-color-secondary);
@@ -7,9 +21,22 @@
     text-transform: uppercase;
     border: 0;
 
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
+
     &:hover,
     &:focus {
         background-color: $button-color-accent-hover;
+    }
+
+    @media screen and (min-width: 768px) {
+        min-width: 152px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        min-width: 147px;
+        height: 42px;
     }
 
 }
@@ -23,14 +50,34 @@
     height: 44px;
     text-transform: uppercase;
 
-    // border-width: 1px;
-    // border-style: solid;
-    // border-color: $border-color-light;
-    // background-color: transparent;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
 
     &:hover,
     &:focus {
         background-color: $button-color-hover;
+    }
+
+    @media screen and (min-width: 768px) {
+        min-width: 152px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        min-width: 147px;
+        height: 42px;
+    }
+
+}
+
+.header-button {
+
+    @media screen and (min-width: 768px) {
+        margin-right: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 16px;
     }
 
 }
