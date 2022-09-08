@@ -12,65 +12,69 @@
 
 }
 
-.button-primary-accent {
+.button__primary-accent {
     @extend %button;
+    @extend %button__primary;
     @include btn-color($button-color-accent, $text-color-secondary);
 
-    min-width: 130px;
-    height: 44px;
-    text-transform: uppercase;
-    border: 0;
+    // min-width: 130px;
+    // height: 44px;
+    // text-transform: uppercase;
+    // border: 0;
 
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.33;
+    // font-weight: 500;
+    // font-size: 12px;
+    // line-height: 1.33;
 
     &:hover,
     &:focus {
         background-color: $button-color-accent-hover;
     }
 
-    @media screen and (min-width: 768px) {
-        min-width: 152px;
-    }
+    // @media screen and (min-width: 768px) {
+    //     min-width: 152px;
+    // }
 
-    @media screen and (min-width: 1280px) {
-        min-width: 147px;
-        height: 42px;
-    }
+    // @media screen and (min-width: 1280px) {
+    //     min-width: 147px;
+    //     height: 42px;
+    // }
 
 }
 
-.button-primary-light {
+
+
+.button__primary-light {
     @extend %button;
+    @extend %button__primary;
     @include btn-color($button-color, $text-color-secondary);
     @include border($border-color-light);
 
-    min-width: 130px;
-    height: 44px;
-    text-transform: uppercase;
+    // min-width: 130px;
+    // height: 44px;
+    // text-transform: uppercase;
 
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.33;
+    // font-weight: 500;
+    // font-size: 12px;
+    // line-height: 1.33;
 
     &:hover,
     &:focus {
         background-color: $button-color-hover;
     }
 
-    @media screen and (min-width: 768px) {
-        min-width: 152px;
-    }
+    // @media screen and (min-width: 768px) {
+    //     min-width: 152px;
+    // }
 
-    @media screen and (min-width: 1280px) {
-        min-width: 147px;
-        height: 42px;
-    }
+    // @media screen and (min-width: 1280px) {
+    //     min-width: 147px;
+    //     height: 42px;
+    // }
 
 }
 
-.header-button {
+.header-button:not(:last-child) {
 
     @media screen and (min-width: 768px) {
         margin-right: 32px;
