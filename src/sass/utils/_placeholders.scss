@@ -1,0 +1,8 @@
+%button {
+    display: block;
+    font-family: inherit;
+    text-align: center;
+    border-radius: 5px;
+
+    transition: background-color $animation;
+}

@@ -1,0 +1,36 @@
+.button-primary-accent {
+    @extend %button;
+    @include btn-color($button-color-accent, $text-color-secondary);
+
+    min-width: 130px;
+    height: 44px;
+    text-transform: uppercase;
+    border: 0;
+
+    &:hover,
+    &:focus {
+        background-color: $button-color-accent-hover;
+    }
+
+}
+
+.button-primary-light {
+    @extend %button;
+    @include btn-color($button-color, $text-color-secondary);
+    @include border($border-color-light);
+
+    min-width: 130px;
+    height: 44px;
+    text-transform: uppercase;
+
+    // border-width: 1px;
+    // border-style: solid;
+    // border-color: $border-color-light;
+    // background-color: transparent;
+
+    &:hover,
+    &:focus {
+        background-color: $button-color-hover;
+    }
+
+}
